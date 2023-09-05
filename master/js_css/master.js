@@ -21,7 +21,7 @@ let multiple = 1;
 let set = 1;
 
 
-function prevNumber() {
+function prevNumber() {                 // prevNumber BUTTON
   click2.play();
   baseNumber -= 1;
   titleWord = titleWords[baseNumber + 1]
@@ -30,7 +30,7 @@ function prevNumber() {
   updateTable();
 }
 
-function nextNumber() {
+function nextNumber() {                 // nextNumber BUTTON
   click1.play();
   baseNumber += 1;
   titleWord = titleWords[baseNumber + 1]
@@ -39,7 +39,7 @@ function nextNumber() {
   updateTable();
 }
 
-function freshSet() {
+function freshSet() {                   // freshSet BUTTON
   setArrow.innerHTML = '&#129095;';
   setArrow.style.background = '#ccc';
   setArrow.style.color = '#eee';
@@ -47,7 +47,7 @@ function freshSet() {
   multiple = 1;  
 }
 
-function nextSet() {
+function nextSet() {                    // nextSet BUTTON
   if (set === 1) {
     click3.play();
     setArrow.innerHTML = '&#129093;';
@@ -63,7 +63,7 @@ function nextSet() {
   }
 }
 
-function updateTable() {
+function updateTable() {                // updateTable OUTPUT
   if (set === 2) { multiple = 16; } else { multiple = 1; };
   tableDiv.innerHTML = '';
 
@@ -81,4 +81,6 @@ function updateTable() {
   }
 }
 
- updateTable();
+ updateTable();                         // CALL updateTable();
+
+
