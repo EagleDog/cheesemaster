@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- Cheese with Options -->
+<html>
+<head>
+	<title> Cheese </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55494855-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55494855-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N29SH7P');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--    CSS     -->
+  <link rel="stylesheet" type="text/css" href="./js_css/cheese.css">
+  <link rel="stylesheet" type="text/css" href="./js_css/buttons.css">
+<!--  End CSS    -->
+
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N29SH7P"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+	<div class='board'>
+		<div class='feedback' id='feedback'></div>
+
+		<div class='holder1'>
+			<p class='figure' id='info1'></p>
+			<p class='figure' id='operand'></p>
+			<p class='figure' id='info2'></p>
+			<p class='figure' id='equals'>=</p>
+			<input class='figure' id='response'></input>
+		</div>
+
+		<div class='holder2'>
+			<button type='submit' class='submit' onclick='submit()'>Submit</button>
+		</div>
+	</div>
+
+  <div class='options' id='options-box'>
+    <div class='btn-options' id='level' onclick="levelGo()">Easy</div>
+    <div class='btn-options' id='plus' onclick="opGo(plus)">+</div>
+    <div class='btn-options' id='minus' onclick="opGo(minus)">&ndash;</div>
+
+    <div class='btn-options' id='help' onclick="helpGo()">Help</div>
+    <div class='btn-options' id='multiply' onclick="opGo(multiply)">x</div>
+    <div class='btn-options' id='divide' onclick="opGo(divide)">&divide;</div>
+    <div class='btn-options' id='negatives' onclick="negGo()">Negatives</div>
+    <div class='btn-options' id='7' onclick="goNum()">7</div>
+    <div class='btn-options' id='3' onclick="goNum()">3</div>
+    <div class='btn-options' id='6' onclick="goNum()">6</div>
+    <div class='btn-options' id='9' onclick="goNum()">9</div>
+    <div class='btn-options' id='12' onclick="goNum()">12</div>
+    <div class='btn-options' id='13' onclick="goNum()">13</div>
+    <div class='btn-options' id='14' onclick="goNum()">14</div>
+    <div class='btn-options' id='15' onclick="goNum()">15</div>
+    <div class='btn-options' id='16' onclick="goNum()">16</div>
+  </div>
+
+
+
+  <button class='nav1' onclick='goBack()'> &#8678; </button>
+  <button class='nav2' onclick='goForward()'> &#8680; </button>
+    
+
+  <script>
+		function goBack() {
+		  new Audio('./clicks/kerchunk.ogg').play();
+      setTimeout(function() {
+      	window.location = '../index.html';
+      }, 400);
+		}
+		function goForward() {
+		  new Audio('./clicks/kerchunk.ogg').play();
+      setTimeout(function() {
+      	window.location = '../master/index.html';
+      }, 400);
+		}
+	</script>
+
+<!--     JS include     -->
+  <script src="./js_css/buttons.js"></script>
+  <script src="./js_css/sounds.js"></script>
+  <script src="./js_css/cheese.js"></script>
+  <script src="./js_css/key_bindings.js"></script>
+<!--   end  JS include  -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--     Master       Master     Master         Master         -->
+
+<html>
+<head>
+	<title> Master </title>
+
+  <!-- global site tag (gtag.js) - google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55494855-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55494855-1');
+  </script>
+
+  <!-- google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N29SH7P');</script>
+  <!-- end google Tag Manager -->
+
+  <meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--  CSS include   -->
+  <link rel="stylesheet" type="text/css" href="./js_css/master.css">
+  <link rel="stylesheet" type="text/css" href="./js_css/master_buttons.css">
+  <!--  End CSS include   -->
+</head>
+
+
+
+
+<body>
+	     <!-- google tag manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N29SH7P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+       <!-- end google tag manager (noscript) -->
+
+<!--     Master       Master     Master         Master         -->
+
+
+	<div class='overlay'>
+
+		<div class='card'>
+
+			<div class='header'>
+
+				<button class='nav00' onclick='prevNumber()'>&#129092;</button>
+
+				<pre class='hh1' id='title'>zen</pre>
+
+				<button class='nav00' onclick='nextNumber()'>&#129094;</button>
+			</div>
+
+			<!-- <table id='multiples'></table> -->
+
+			<div>
+				<button class='nav00' id='nav0d' onclick='nextSet()'>&#129095;</button>
+			</div>
+
+		</div>
+	</div>
+
+  <button class='nav1' onclick='goBack()'> &#8678; </button>
+  <button class='nav2' onclick='goForward()'> &#8680; </button>
+
+
+<!-- ---------------- JS ---------------- -->
+
+  <script src="./js_css/master.js"></script>
+  <script src="./js_css/key_bindings.js"></script>
+
+
+  <script>
+  	const swipe = new Audio('./assets/kerchunk.ogg');
+
+		function goBack() {
+		  swipe.play();
+      setTimeout(function() {
+      	window.location = '../index.html';
+      }, 400);
+		}
+		function goForward() {
+		  swipe.play();
+      setTimeout(function() {
+      	window.location = './cursor_mover.html';
+      }, 400);
+		}
+	</script>
+
+
+</body>
+
+</html>
+
+<!--     Master       Master     Master         Master         -->
+

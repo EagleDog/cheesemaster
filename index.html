@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html>
+<!-- # cheesemaster # -->
+
+
+<!-- ---------------- HEAD ---------------- -->
+
+<head>
+  <title>cheesemaster section</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55494855-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55494855-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N29SH7P');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- ---------------- CSS include ---------------- -->
+
+  <link rel="stylesheet" href="./js_css/index.css">
+  <link rel="stylesheet" href="./js_css/index_buttons.css">
+
+</head>
+
+
+<!-- ---------------- BODY ---------------- -->
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N29SH7P"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  <!--    BODY   -->
+
+  <div>
+    <h1>&nbsp;&emsp;cheesemaster&emsp;&nbsp;</h1>
+  </div>
+
+
+
+  <div class='holder1'>
+    <button class='nav1' onclick='GoBack()'> &#8678; </button>
+
+    <button class='clicky' onclick='Cheese()'> cheese </button>
+    <button class='clicky' onclick='Master()'> master </button>
+    <button class='nav2' onclick='GoForward()'> &#8680; </button>
+
+  </div>
+
+  <div>
+    <h3> ________________ </h3>
+  </div>
+
+
+<!-- ---------------- JS ---------------- -->
+
+  <!-- <script src="./js_css/howler.js"></script> -->
+  <!-- <script src="./js_css/index_buttons.js"></script> -->
+
+  <script>
+    const swipe = new Audio("./master/assets/kerchunk.ogg");
+    const clickity = new Audio("./master/assets/click2.ogg");
+    const swooshIn = new Audio("./master/assets/swoosh1.ogg");
+    const swooshOut = new Audio("./master/assets/swoosh2.ogg");
+    // const click1 = new Audio("./master/assets/click1.ogg");
+    // const click2 = new Audio("./master/assets/rasp_click3.ogg");
+    // const click3 = new Audio("./master/assets/typing6.ogg");
+    // const click4 = new Audio("./master/assets/typing7.ogg");
+    // const sound1 = new Audio('./cheese/clicks/cancel_sine1.ogg');
+    // const sound2 = new Audio('./cheese/clicks/cancel_sine2.ogg');
+    const sound3 = new Audio('./cheese/clicks/fwhick.ogg');
+    const sound4 = new Audio('./cheese/clicks/thuck.ogg');
+    const sound5 = new Audio('./cheese/beeps/splish_zap.ogg');
+    fwhick.volume = 0.2;
+    thuck.volume = 0.2;
+    splishZap.volume = 0.2;
+
+
+    function GoBack() {
+      swipe.play();
+      setTimeout(function() {
+        window.location = './master/index.html';
+      }, 400);
+    }
+    function Cheese() {
+      if (Math.random() < 0.2) {
+        swooshIn.play();
+      } else if (Math.random() < 0.3) {
+         swooshOut.play();
+      } else if (Math.random() < 0.3) {
+        sound3.play();
+      } else if (Math.random() < 0.5) {
+         sound4.play();
+      } else {
+         sound5.play();
+      }
+    }
+    function Master() {
+      clickity.play();
+      setTimeout(function() {
+        window.location = './master/index.html';
+      }, 300);
+    }
+    function GoForward() {
+      swipe.play();
+      // swooshIn.play();
+      setTimeout(function() {
+        window.location = './master/index.html';
+      }, 400);
+    }
+  </script>
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
